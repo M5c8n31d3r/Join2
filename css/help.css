@@ -1,4 +1,4 @@
-/***** Help Container *****/
+/*||||||||||||||||||||||>>> Help & Legal Container <<<||||||||||||||||||||||*/
 
 .help-container {
   padding: 48px 5%;
@@ -33,9 +33,6 @@
   cursor: pointer;
   right: 100px;
 }
-/* .icon-arrow-back-black:hover {
-  color: var(--lightblue);
-} */
 
 .sticky {
   position: sticky;
@@ -46,7 +43,8 @@
   margin-bottom: 50px;
 }
 
-/***** Responsive Design *****/
+/*||||||||||||||||||||||>>> Responsive <<<||||||||||||||||||||||*/
+/*||||||||||||||||||||||||>>> Design <<<|||||||||||||||||||||||||*/
 
 @media (max-width: 1200px) {
   .headline {
