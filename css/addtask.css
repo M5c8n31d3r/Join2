@@ -1,0 +1,174 @@
+.add-task-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-task-left {
+  width: 100%;
+}
+
+.add-task-right {
+  width: 100%;
+}
+
+.add-task-prio-row {
+  width: 100%;
+}
+
+.add-task-btns {
+  display: none;
+}
+
+.add-task-btn-create-m {
+  position: fixed;
+  /* top: 13px;
+  right: 24px; */
+  top: 0px;
+  right: 96px;
+  display: flex;
+  z-index: 10;
+}
+
+.back-arrow {
+  filter: invert(0%) sepia(0%) saturate(7469%) hue-rotate(217deg)
+    brightness(108%) contrast(108%) !important;
+}
+
+/* template */
+
+.input-bar {
+  height: 48px;
+}
+
+.input-bar input {
+  font-size: 16px;
+}
+
+.addtask-background {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  overflow: scroll;
+}
+
+.addtask-overlay {
+  background-color: var(--grey-bg);
+  width: 100vw;
+  height: fit-content;
+  padding: calc(var(--nav-height-m) + 16px) 33px
+    calc(var(--nav-height-m) + 16px) 33px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.addtask-body {
+  background-color: var(--grey-bg);
+}
+
+.addtask-card-close {
+  display: none;
+}
+
+.add-task-right .form-inputs,
+.add-task-left .form-inputs {
+  margin: 9px 0;
+}
+
+/* --------------------------------------------------------------------------- */
+
+@media (max-width: 445px) {
+  .add-task-prio-row {
+    flex-direction: column;
+  }
+}
+
+/* --------------------------------------------------------------------------- */
+
+@media (max-width: 800px) {
+  .addtask-overlay {
+    position: relative;
+    background-color: var(--grey-bg);
+    max-width: 1116px;
+    height: fit-content;
+    max-height: 100%;
+    overflow: auto;
+    padding: 63px 74px;
+    border-radius: var(--border-radius-xl);
+  }
+}
+
+/* --------------------------------------------------------------------------- */
+
+@media (min-width: 1000px) {
+  .add-task-form {
+    max-width: 1080px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .add-task-middle {
+    width: 2px;
+    background-color: var(--shadow);
+    margin: 0 40px;
+  }
+
+  .input-bar {
+    height: 53px;
+  }
+
+  .input-bar input {
+    font-size: 21px;
+  }
+
+  .add-task-btns {
+    display: flex;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+  }
+
+  .add-task-btn-create-m {
+    display: none;
+  }
+
+  .addtask-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+  }
+
+  .addtask-overlay {
+    position: relative;
+    background-color: var(--grey-bg);
+    max-width: 1116px;
+
+    height: fit-content;
+    max-height: 100%;
+    overflow: auto;
+    padding: 63px 74px;
+    border-radius: var(--border-radius-xl);
+  }
+
+  .subtask-label {
+    display: contents;
+  }
+}

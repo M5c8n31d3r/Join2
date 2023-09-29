@@ -1,0 +1,556 @@
+.content-contacts {
+  padding: calc(var(--nav-height-m) + 16px) 33px
+    calc(var(--nav-height-m) + 16px) 33px;
+}
+
+#contactlist {
+  padding: 0 35px;
+  padding-bottom: calc(var(--nav-height-m) + 50px);
+}
+
+.contacts-col-l {
+  background-color: var(--white);
+  position: absolute;
+  top: var(--nav-height-m);
+  left: 0;
+  right: 0;
+}
+
+.btn-container {
+  padding: 15px 10px 0 0;
+}
+
+.contacts-col-r {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: var(--nav-height-m);
+  background-color: var(--grey-bg);
+  z-index: 0;
+  display: none;
+  height: calc(100vh - 89px);
+  padding: 35px 34px;
+}
+
+.blue-line-h {
+  height: 3px;
+  width: 90px;
+  background-color: var(--lightblue);
+}
+
+.head {
+  padding-bottom: 123px;
+}
+
+.back-arrow {
+  cursor: pointer;
+  position: absolute;
+  right: 34px;
+  top: 100px;
+}
+
+.contacts-subline {
+  padding: 20px 0 32px 0;
+}
+
+.initials-contact-medium {
+  border-radius: 100%;
+  min-height: 80px;
+  min-width: 80px;
+  color: var(--white);
+  font-size: 27px;
+  border: 2px solid var(--white);
+}
+
+.initials-contact-big {
+  border-radius: 100%;
+  height: 120px;
+  width: 120px;
+  color: var(--white);
+  font-size: 27px;
+  border: 2px solid var(--white);
+}
+
+.contact-details-name {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.contact-details-edit {
+  display: none;
+}
+
+.btn-delete-contact {
+  padding: 6px;
+  height: 40px;
+  width: 40px;
+  border-radius: var(--border-radius-m);
+  background-color: var(--darkblue);
+  position: absolute;
+  right: 84px;
+  bottom: 110px;
+}
+
+.btn-edit-contact {
+  padding: 6px;
+  height: 40px;
+  width: 40px;
+  border-radius: var(--border-radius-m);
+  background-color: var(--darkblue);
+  position: absolute;
+  right: 22px;
+  bottom: 110px;
+}
+
+.btn-edit-contact img {
+  filter: brightness(1);
+}
+
+.cl-letters {
+  font-size: 21px;
+  padding: 24px 30px;
+  border-bottom: 1px solid var(--grey);
+}
+
+.cl-group {
+  padding: 14px 0;
+}
+
+.cl-contact {
+  padding: 8px 0;
+  border-radius: var(--border-radius-m);
+}
+
+/* New Contact & Add Contact */
+
+.nc-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.nc-card {
+  position: relative;
+  background-color: var(--white);
+  width: 88vw;
+  height: calc(100vh - (2 * var(--nav-height-m)) - 5vh);
+  border-radius: var(--border-radius-xl);
+  margin: auto;
+  top: var(--nav-height-m);
+}
+
+.nc-card-close {
+  position: absolute;
+  top: 33px;
+  right: 23px;
+  height: 22px;
+  width: 22px;
+  filter: brightness(10) saturate(0);
+}
+
+.nc-card-top {
+  background-color: var(--darkblue-active);
+  border-top-right-radius: var(--border-radius-xl);
+  border-top-left-radius: var(--border-radius-xl);
+  padding: 0 46px;
+  padding-bottom: 123px;
+}
+
+.nc-card-initials {
+  position: relative;
+}
+
+.nc-placeholder {
+  filter: brightness(10) saturate(0);
+  height: 54px;
+}
+
+.nc-card-top h1 {
+  /* padding-top: 115px; */
+  padding-top: 16px;
+  color: var(--white);
+  padding-bottom: 12px;
+  margin-bottom: 0;
+  line-height: 1;
+  text-align: center;
+}
+
+.nc-card-top h2 {
+  color: white;
+  font-size: 21px;
+  font-weight: 200;
+}
+
+.nc-card-bottom {
+  border-bottom-right-radius: var(--border-radius-xl);
+  border-bottom-left-radius: var(--border-radius-xl);
+  padding: 0px 27px 49px 27px;
+  margin-top: -90px;
+}
+
+.nc-btn {
+  position: absolute;
+  /* bottom: 48px; */
+  bottom: 12px;
+  height: 51px;
+  font-size: 21px;
+  padding: 0 10px;
+}
+
+.nc-btn img {
+  padding-left: 10px;
+  width: 30px;
+}
+
+/* Add task */
+
+.addtask-card-close {
+  height: 22px;
+  width: 22px;
+  display: unset !important;
+  position: absolute;
+  right: 40px;
+  top: calc(var(--nav-height-m) + 30px);
+}
+
+.addtask-card-close img {
+  height: 22px;
+  width: 22px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (min-width: 800px) {
+  .contacts-col-l,
+  .contacts-col-r {
+    padding-left: calc(-22px + var(--nav-width-d));
+  }
+}
+
+@media (min-width: 1160px) {
+  .content-contacts {
+    height: 100vh;
+    padding: 89px 50px 0 calc(var(--nav-width-d));
+    margin: auto;
+  }
+
+  .contacts-col-l {
+    position: unset;
+    min-width: 453px;
+    padding: 12px 48px 0px 48px;
+    overflow-y: scroll;
+    height: calc(100vh - 89px);
+  }
+
+  .contacts-col-r {
+    position: unset;
+    display: unset;
+    background-color: unset;
+    padding: 82px 0 0 58px;
+  }
+
+  /* Right col */
+
+  .contacts-headline {
+    padding-bottom: 50px;
+  }
+
+  .contact-details-main {
+    padding-bottom: 40px;
+  }
+
+  .contact-details-name {
+    font-size: 47px;
+    font-weight: 500;
+  }
+
+  .contact-details-edit {
+    display: flex;
+  }
+
+  .contact-details-edit img {
+    filter: brightness(0);
+    height: 26px;
+  }
+
+  .contact-details-add-task,
+  .contact-details-add-task img {
+    font-size: 16px;
+    color: var(--lightblue);
+    filter: invert(58%) sepia(78%) saturate(1783%) hue-rotate(165deg)
+      brightness(95%) contrast(85%);
+    height: 15px;
+  }
+
+  .back-arrow {
+    display: none;
+    cursor: pointer;
+  }
+
+  .blue-line {
+    background-color: var(--lightblue);
+    min-width: 3px;
+    min-height: 59px;
+  }
+
+  .initials-contact-medium {
+    border-radius: 100%;
+    min-height: 120px;
+    min-width: 120px;
+    color: var(--white);
+    font-size: 47px;
+    border: 3px solid var(--white);
+  }
+
+  .initials-contact-big {
+    border-radius: 100%;
+    min-height: 120px;
+    min-width: 120px;
+    color: var(--white);
+    font-size: 47px;
+    border: 3px solid var(--white);
+  }
+
+  .btn-delete-contact {
+    padding: 6px;
+    height: 53px;
+    width: 53px;
+    border-radius: var(--border-radius-m);
+    background-color: var(--darkblue);
+    position: absolute;
+    right: 280px;
+    bottom: 64px;
+  }
+
+  /* Contact-List */
+  #contactlist {
+    padding: 0 17px;
+  }
+
+  .cl-letters {
+    font-size: 21px;
+    padding: 24px 30px;
+    border-bottom: 1px solid var(--grey);
+  }
+
+  .cl-contact:hover,
+  .cl-contact:hover .cl-contact-name,
+  .cl-contact-active {
+    background-color: var(--darkblue);
+    color: var(--white);
+  }
+
+  .initials {
+    border-radius: var(--border-radius-xl);
+    font-size: 12px;
+    min-height: 42px;
+    min-width: 42px;
+    color: var(--white);
+    border: 2px solid var(--white);
+  }
+
+  .cl-contact-email {
+    font-size: 16px;
+  }
+
+  /* Contact */
+
+  .btn-new-contact {
+    position: absolute;
+    height: 53px;
+    right: 52px;
+    bottom: 64px;
+    font-size: 21px;
+    font-weight: 700;
+  }
+
+  .btn-new-contact img {
+    height: 30px;
+  }
+
+  /* new / add contact */
+
+  .nc-background {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+  }
+
+  .nc-card {
+    position: unset;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+    width: 90%;
+    max-width: 1080px;
+    height: 594px;
+    border-radius: var(--border-radius-xl);
+    margin: auto;
+  }
+
+  .nc-logo {
+    width: 55px;
+    height: 66px;
+  }
+
+  .nc-card-top h1 {
+    padding-top: 0;
+    color: var(--white);
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 120%;
+    text-align: unset;
+    font-weight: 700;
+  }
+
+  .nc-card-top h2 {
+    color: white;
+    font-size: 27px;
+    font-weight: 200;
+  }
+
+  .nc-card-close {
+    filter: brightness(0) saturate(0);
+  }
+
+  .nc-card-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--darkblue-active);
+    border-bottom-left-radius: var(--border-radius-xl);
+    border-top-right-radius: unset;
+    border-top-left-radius: var(--border-radius-xl);
+    padding: 0 46px;
+  }
+
+  .nc-card-bottom {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border-bottom-right-radius: var(--border-radius-xl);
+    border-bottom-left-radius: var(--border-radius-xl);
+    padding: 0px 27px 49px 27px;
+    margin-top: unset;
+  }
+
+  .nc-btn-box {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+  }
+
+  .nc-btn {
+    position: unset;
+    bottom: unset;
+    height: 61px;
+    font-size: 21px;
+    padding: 0 17px;
+  }
+
+  .nc-btn-light {
+    cursor: pointer;
+    height: 61px;
+    gap: 17px;
+    font-size: 21px;
+    padding: 0 17px;
+  }
+
+  .contact-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  /* Add task */
+
+  .addtask-card-close {
+    display: unset !important;
+    position: absolute;
+    right: 37px;
+    top: 38px;
+  }
+
+  .addtask-card-close img {
+    height: 22px;
+    width: 22px;
+  }
+
+  /* Scrollbar */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: var(--border-radius-m);
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+@media (max-width: 415px) {
+  .nc-card-top h1 {
+    font-size: 26px;
+  }
+
+  .nc-card-top h2 {
+    font-size: 14px;
+  }
+
+  .nc-card-top {
+    padding-bottom: 20px;
+  }
+
+  .nc-placeholder {
+    height: 24px;
+  }
+
+  .nc-card {
+    height: calc(100vh - (2 * var(--nav-height-m)) - 2vh);
+  }
+
+  .nc-card-initials {
+    position: fixed;
+  }
+
+  .initials-contact-big {
+    height: 40px;
+    width: 40px;
+    top: 88px;
+  }
+
+  .contact-detail {
+    margin-top: 110px;
+  }
+
+  .input-bar {
+    height: 36px;
+  }
+}
